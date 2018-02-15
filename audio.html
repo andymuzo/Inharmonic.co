@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+
+	<title>Inharmonic - Andrew Rogers</title>
+	<meta name="description" content="Inharmonic">
+	<meta name="author" content="Andrew Rogers">
+
+	<link rel="stylesheet" href="styles/inharmonic_styles.css">
+</head>
+
+<body>
+	<div id="screen_cover" class="screen_hidden"></div>
+	<div class="nav_button">
+		<div id="nav_button_harm1"></div>
+		<div id="nav_button_harm2"></div>
+		<div id="nav_button_harm3"></div>
+	</div>
+	<div class="hidden_nav" id="navigation">
+		<div class="harm_big_box">
+			<div class="harm_box"><div class="harmonic" id="harm1st"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm2nd"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm3rd"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm4th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm5th"></div></div>
+			<div class="harm_box"><div class="harmonic harmonic_on" id="harm6th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm7th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm8th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm9th"></div></div>
+		</div>
+		<div class="description_box">
+			<a href="index.html" class="link_description" id="link_description01">Main Page</a>
+			<a href="introductions.html" class="link_description" id="link_description02">Introductions</a>
+			<a href="teaching.html" class="link_description" id="link_description03">Teaching</a>
+			<a href="muso.html" class="link_description" id="link_description04">Muso Game</a>
+			<a href="android.html" class="link_description" id="link_description05">Android Apps</a>
+			<a href="audio.html" class="link_description link_show" id="link_description06">Audio</a>
+			<a href="visual.html" class="link_description" id="link_description07">Visual</a>
+			<a href="projects.html" class="link_description" id="link_description08">Other Projects</a>
+			<a href="contact.html" class="link_description" id="link_description09">Contact Me</a>
+		</div>
+	</div>
+	<h1 class="page_title">Audio</h1>
+
+	<div class="page_item_header">
+		<h2>Pure Data</h2>
+	</div>
+
+	<div class="page_item">
+		<div class="page_item_body">
+			<p>
+				Pure Data is an open source visual programming language for music creation. I've been using it and it's cousin Max/MSP on and off for the past 12 years for a wide range of projects. It's the first programming language I learnt and led on to learning C, Java, Python, HTML, CSS and Javascript.
+			</p>
+
+			<img src="images/audio/additive01.png" class="item_image_full">
+
+		</div>
+	</div>
+
+	<div class="page_item">
+		<h3>Milosin</h3>
+		<div class="page_item_body">
+			<p>
+				An on-going experiment of mine into additive synthesis. Milosin is an additive synthesiser created in Pure Data that uses 1000 sine wave oscillators to build up the individual harmonics of a sound. Below is a test track putting the synth through it's paces - don't expect music! The interface is a bunch of sliders and buttons controlled with mouse at the moment. The next step will be hooking up my digital piano and a control surface, I have some interesting thoughts on "stealing" harmonics from notes currently playing to build up any other notes played.
+			</p>
+			<p>
+				In the first part of the recording it sounds like any standard sawtooth synth. What sets it apart is later when the oscillators move from note to note independently, creating a cascading effect. I can also adjust the "harmonic multiplier". Essentially sawtooth waves are made from a fundamental frequency and then every integer (whole number) multiple of that frequency, decreasing in amplitude as the pitch increases. By setting the harmonic multiplier to a non-whole number we get a repeating patterns of <strong>inharmonics</strong> (hence the name of this site!) that create entirely new tones that are simply impossible to create using a subtractive synth. This effect can be heard clearly in the last 3rd of the recording where I first vastly expand the harmonics then gradually contract them until we are left with a closed growling sound before exploding them again at the end.
+			</p>
+
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250855458&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+		</div>
+	</div>
+
+	<div class="page_item_header">
+		<h2>Composition</h2>
+	</div>
+	
+	<div class="page_item">
+		<h3>Piano</h3>
+		<div class="page_item_body">
+			<p>
+				I am determined not to put up a back catalogue of old music on here, instead I want a fresh start. I am currently working on a solo piano piece, heavily inspired by the chromaticism of Philip Glass. I'll post an update as I finish each section but I don't want to put up the score half-finished!
+			</p>
+		</div>
+	</div>
+
+	<div class="page_item_header">
+		<h2>Recording</h2>
+	</div>
+	
+	<div class="page_item">
+		<h3>Mandola Hangover</h3>
+		<div class="page_item_body">
+			<p>
+				The beautifully named <a href="https://www.facebook.com/MandolaHangover/">Mandola Hangover</a> are coming to the studio on the 5th April (2016) for another recording session. Below is one of the tracks I recorded and produced from their last visit. Looking forwards to another productive day's recording and I cant wait to try out my new <a href="http://europe.beyerdynamic.com/shop/dt-880-pro.html">Beyerdynamic DT880 headphones</a> for the mix.
+			</p>
+
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/uk3AHyQiJTc" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="scripts/main_page.js"></script>
+</body>
+</html>

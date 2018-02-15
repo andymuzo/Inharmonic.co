@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+
+	<title>Inharmonic - Andrew Rogers</title>
+	<meta name="description" content="Inharmonic">
+	<meta name="author" content="Andrew Rogers">
+
+	<link rel="stylesheet" href="styles/inharmonic_styles.css">
+</head>
+
+<body>
+	<div id="screen_cover" class="screen_hidden"></div>
+	<div class="nav_button">
+		<div id="nav_button_harm1"></div>
+		<div id="nav_button_harm2"></div>
+		<div id="nav_button_harm3"></div>
+	</div>
+	<div class="hidden_nav" id="navigation">
+		<div class="harm_big_box">
+			<div class="harm_box"><div class="harmonic" id="harm1st"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm2nd"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm3rd"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm4th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm5th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm6th"></div></div>
+			<div class="harm_box"><div class="harmonic harmonic_on" id="harm7th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm8th"></div></div>
+			<div class="harm_box"><div class="harmonic" id="harm9th"></div></div>
+		</div>
+		<div class="description_box">
+			<a href="index.html" class="link_description" id="link_description01">Main Page</a>
+			<a href="introductions.html" class="link_description" id="link_description02">Introductions</a>
+			<a href="teaching.html" class="link_description" id="link_description03">Teaching</a>
+			<a href="muso.html" class="link_description" id="link_description04">Muso Game</a>
+			<a href="android.html" class="link_description" id="link_description05">Android Apps</a>
+			<a href="audio.html" class="link_description" id="link_description06">Audio</a>
+			<a href="visual.html" class="link_description link_show" id="link_description07">Visual</a>
+			<a href="projects.html" class="link_description" id="link_description08">Other Projects</a>
+			<a href="contact.html" class="link_description" id="link_description09">Contact Me</a>
+		</div>
+	</div>
+	<h1 class="page_title">Visual</h1>
+
+	<div class="page_item_header">
+		<h2>Processing</h2>
+	</div>
+
+	<div class="page_item">
+		<h3>What is Processing?</h3>
+		<div class="page_item_body">
+
+			<img src="images/processing/processing_window.png" class="item_image_left">
+
+			<p>
+				Processing is a piece of software written for artists, by artists. It allows the user to create 2d and 3d images, videos, art installations, 3d prints, robots... the list goes on! It uses the Java language and a large library of functions to remove the painful processes of asking a computer to draw to pixels on the screen and lets the user simply code away! The software is free and is available from the <a href="http://www.processing.org">Processing web site</a>.
+			</p>
+			<p>
+				There is a lot of potential in this software, I have been scratching the surface of possibilities. As I create more work worth sharing I'll add new sections below. My most recent area of interest has been playing with the idea that the numbers used to store digital pictures (i.e. the RGB components of each pixel) could be used in novel ways to either manipulate the image or create brand new ones.
+			</p>
+		</div>
+	</div>
+
+	<div class="page_item_header">
+		<h2>Colour Shifting</h2>
+	</div>
+
+	<div class="page_item">
+		<div class="page_item_body">
+			
+			<p>
+				I've been experimenting with processing images by moving each pixel by an amount determined by the amount of red, green or blue in that pixel. Below are some of the more interesting examples.
+			</p>
+			
+			<img src="images/processing/colour_shift-000801-red.png" class="item_image_full">
+
+			<p>
+				Twisted Face. This has been shifted to the left depending on how much red is in each pixel. I like the appearance of the 2d image being distorted in 3 dimensions (though this isn't what is actually happening).
+			</p>
+
+			<img src="images/processing/colour_shift-004101.png" class="item_image_full">
+
+			<img src="images/processing/colour_shift-0013671- Green.png" class="item_image_full">
+			<p>
+				In the top photo each pixel is separated into it's component colours and shifted based on the brightness of each. The lower photo has been shifted based on a single component of each pixel.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="page_item_header">
+		<h2>Pixel Lines</h2>
+	</div>
+
+	<div class="page_item">
+		<div class="page_item_body">
+			<p>
+				This has been my favourite experiment to date. In this I am playing with drawing lines from individual pixels to another point. Below are some of the more interesting variations.
+			</p>
+			<img src="images/processing/quad_line-062231.png" class="item_image_full">
+
+			<p>
+				Quad Portrait. The source photo is that of a girl with a shaven head in profile in front of a brick wall. The image above is a still from the end of the process that can take around half an hour to form. A pixel is chosen from the source photo and a translucent line of that colour is drawn to the corner, this is done 4 times, one for each corner forming 4 separate images. The pixel being selected meanders around the photo leaving a trail of lines and eventually exposing the image. I really like how it defines different parts of the image in each quarter of the final piece, a ghostly face appearing from a bundle of straight lines.
+			</p>
+
+			<img src="images/processing/quad_line-008583.png" class="item_image_full">
+
+			<img src="images/processing/quad_line-169076.png" class="item_image_full">
+			<p>
+				Explosion (top). Purple Landscape (bottom). These pieces were made by analysing a photo by choosing a pixel at random then finding up to 100 other pixels in the source image with the exact same colour. It then connects the 100 pixels to the first one with a line of the common colour. The idea was to create connections between regions of the pictures and ultimately an interesting abstraction of the source photo.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="page_item_header">
+		<h2>Point Tracer</h2>
+	</div>
+
+	<div class="page_item">
+		<div class="page_item_body">
+
+			<p>
+				The idea behind these images was to use the information already in photos to generate patterns. Each line of pixels in a photo is treated as a series of instructions whereby a line of each rgb colour component are drawn from a single point of origin. The amount of each colour component in the line is used to steer the line left or right. This is a long process with each line being drawn individually, eventually making the images below. The images are all variations on the theme with differing source pictures, lines thickness, run times, blend modes etc. What I hoped to find was that because each line of pixels is often very similar to the line above it, the images would have some kind of consistency and interesting patterns would form throughout the image.
+			</p>
+			<img src="images/processing/point_tracer-0007692.png" class="item_image_full">
+
+			<img src="images/processing/point_tracer-0007696.png" class="item_image_full">
+
+			<img src="images/processing/point_tracer-0007698.png" class="item_image_full">
+
+			<img src="images/processing/point_tracer-192776.png" class="item_image_full">
+
+			<img src="images/processing/point_tracer-398689.png" class="item_image_full">
+		</div>
+	</div>
+	
+	<div class="page_item_header">
+		<h2>Design</h2>
+	</div>
+
+	<div class="page_item">
+		<h3>Logos</h3>
+		<div class="page_item_body">
+
+			<p>
+				I am big fan of the unfortunately-acronymed <a href="https://en.wikipedia.org/wiki/GIMP">GNU Image Manipulation Program</a>, essentially it's an open-source photoshop. I've used it for all of the design in <a href="android.html">the apps I've made</a>, where needed in the <a href="muso.html">Muso flash game</a> and for occasionally making logos. Below is a selection of work I've done, the copyright of all the logos is owned by the people and businesses they were made for.
+			</p>
+			<img src="images/design/agency_logo_wide.png" class="item_image_full">
+
+			<img src="images/design/atr_logo.png" class="item_image_full">
+
+			<img src="images/design/atr logo 04.png" class="item_image_full">
+
+			<img src="images/design/atr logo 06.png" class="item_image_full">
+
+			<img src="images/design/Cahoots logo01.png" class="item_image_full">
+
+			<img src="images/design/LFM Logo 01.png" class="item_image_full">
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="scripts/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="scripts/main_page.js"></script>
+</body>
+</html>
