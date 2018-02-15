@@ -1,0 +1,211 @@
+
+
+body {
+	background-color: #636858;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #EBF0DA;
+	font-family: "Jura";
+	font-size: 5em;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #D9E3CB;
+	font-family: "Jura";
+	font-size: 2em;
+}
+
+#screen_cover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+
+.screen_hidden {
+	background-color: rgba(255,255,255,0);
+	visibility: hidden;
+}
+
+.screen_visible {
+	background-color: rgba(255,255,255,0.5);
+	visibility: visible;
+}
+
+#navigation {
+	transition: all 0.5s;
+	background-color: #636858;
+	overflow: hidden !important;
+	border-bottom: 5px;
+	border-color: #F9CF4F;
+	border-bottom-style: solid;
+	position: fixed;
+	margin: 0;
+	width: 100%;
+}
+
+.main_page_override {
+	position: absolute !important;
+	border-top: 5px;
+	border-top-style: solid;
+	height: 70% !important;
+}
+
+.hidden_nav {
+	height: 0;
+	visibility: hidden;
+}
+
+.visible_nav {
+	height: 60%;
+	visibility: visible;
+}
+
+.nav_button {
+	position: fixed;
+	background-color: #F9CF4F;
+	margin: 10px;
+	width: 90px;
+	height: 90px;
+	right: 0;
+	top: 0;
+}
+
+.colourholder {
+	color: #FFF5E4; /* cream */
+	color: #D9E3CB; /* pale green */
+	color: #EBF0DA; /* paler green */
+	color: #F7F6E5; /* palest green */
+	color: #636858; /* mid desaturated green */
+	color: #F9CF4F; /* mid yellow */
+}
+
+.spacer {
+	height: 1500px;
+}
+
+.harm_big_box {
+	height: 40%;
+	width: 80%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+
+.harm_box {
+	width: 30px;
+	height: 100%;
+	background-color: #89967F;
+	position: relative;
+	border-top-right-radius: 20px;
+}
+
+.harmonic {
+	height: 85%;
+	width: 20px;
+	background-color: #F7F6E5;
+	position: absolute;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: all 1s;
+	left: 16.1%;
+	box-shadow: 0px 0px 0px 0px #F7F6E5;
+}
+
+.harmonic_on {
+	background-color: #F9CF4F;
+	height: 95%;
+	box-shadow: 0px 0px 0px 2px #636858;
+}
+
+#harm1st {
+	bottom: 0;
+}
+
+#harm2nd {
+	bottom: -17%;
+}
+
+#harm3rd {
+	bottom: -31%;
+}
+
+#harm4th {
+	bottom: -42%;
+}
+
+#harm5th {
+	bottom: -50%;
+}
+
+#harm6th {
+	bottom: -57%;
+}
+
+#harm7th {
+	bottom: -63%;
+}
+
+#harm8th {
+	bottom: -67%;
+}
+
+#harm9th {
+	bottom: -71%;
+}
+
+#harm10th {
+	bottom: -74%;
+}
+
+.description_box {
+	height: 100px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	position: absolute;
+	left: 50%;
+}
+
+.link_description {
+	padding: 4px;
+	position: absolute;
+	width: 460px;
+	color: #F9CF4F;
+	left: -230px;
+	font-family: "Jura";
+	font-size: 3em;
+	visibility: hidden;
+	transition: all 0.5s;
+	opacity: 0;
+	border: 4px;
+	border-style: solid;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.link_show {
+	visibility: inherit;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.text_box {
+	text-align: left;
+	font-family: "Jura";
+	padding: 20px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
